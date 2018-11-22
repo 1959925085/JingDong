@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_product"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/img_product"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/cb_product"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_product"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_product_name"
+        android:text="cvbbnm"
+        android:layout_toRightOf="@id/img_product"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="fghjk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_single_price" />
+
+        <com.example.jingdong.view.widget.jiajian
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adv_product"
+            android:layout_marginLeft="20dp"></com.example.jingdong.view.widget.jiajian>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/delete"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

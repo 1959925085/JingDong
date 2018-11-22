@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/my_head"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/loginbefore">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_centerInParent="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/img"
+                android:layout_marginLeft="20dp"
+                fresco:progressBarImage="@drawable/ic_launcher_background"
+                fresco:placeholderImage="@drawable/deng"
+                fresco:progressBarAutoRotateInterval="1000"
+                fresco:retryImageScaleType="centerInside"
+                fresco:roundAsCircle="true"
+                tools:layout_editor_absoluteY="41dp"
+                tools:layout_editor_absoluteX="55dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录/注册"
+                android:textColor="#ffff"
+                android:id="@+id/deng"
+                android:padding="20dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

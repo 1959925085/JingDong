@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#cc949191">
+
+    <TextView
+
+        android:id="@+id/text_pai"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="40dp"
+        android:text="拍照上传" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/text_xiang"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="相册上传" />
+
+</LinearLayout>

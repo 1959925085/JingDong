@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.SouActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#ea0b25">
+
+        <EditText
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/et"
+            android:hint="请输入关键字"
+            android:padding="5dp"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:text="搜索"
+            android:id="@+id/but"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热搜"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+
+        <com.example.jingdong.view.widget.Sousuo
+            android:id="@+id/sousou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="老人机" />
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美妆" />
+        </com.example.jingdong.view.widget.Sousuo>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="历史记录"
+            android:textSize="20dp"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:id="@+id/lv"
+            ></ListView>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="清除历史记录"
+            android:layout_gravity="center_horizontal"
+            android:onClick="delete"
+            />
+
+</LinearLayout>
